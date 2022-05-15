@@ -19,6 +19,6 @@ public class MainTest {
     @Test
     public void testDivideError() {
         Main main = new Main();
-        assertEquals(0, main.divide(6,2));
+        assertEquals(3, main.divide(6,2));
     }
 }
