@@ -27,6 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
+        working-directory: ./mvn-app
         run: echo Maven build!
       - uses: actions/setup-java@v3
         with:
@@ -36,5 +37,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        working-directory: ./mvn-app
         run: mvn clean install
           
